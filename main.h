@@ -1,8 +1,11 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINT_F
+#define PRINT_F
 
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
+
 
 /**
  * struct flags - struct containing flags to "turn on"
@@ -72,5 +75,6 @@ int print_address(va_list l, flags_t *f);
 
 /* print_percent */
 int print_percent(va_list l, flags_t *f);
+
 
 #endif
